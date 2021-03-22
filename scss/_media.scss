@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header {
+    &_menu-icon {
+      display: block;
+    }
+
+    &_navbar {
+      position: fixed;
+      top: -120%;
+      left: 0;
+      width: 100%;
+      background-color: #444;
+
+      &__toggle {
+        top: 6.4rem;
+      }
+
+      & ul {
+        flex-direction: column;
+        padding: 2rem 0;
+
+        & li {
+          width: 100%;
+          margin: 1.5rem 0;
+          text-align: center;
+        }
+
+        & a {
+          display: block;
+          font-size: 2.5rem;
+
+          &:hover,
+          &.navlink_active {
+            color: $dark-orange-color;
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    &_heading {
+      font-size: 4rem;
+    }
+
+    &_subheading {
+      width: auto;
+    }
+  }
+
+  .teachers {
+    &_subheading {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
